@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Football Not Soccer</string>
+
+    <string-array name="leaguename">
+        <item>Premier League</item>
+        <item>La Liga Santander</item>
+        <item>Serie A TIM</item>
+        <item>Ligue 1 Conforama</item>
+        <item>Bundesliga</item>
+    </string-array>
+
+    <array name="logos">
+        <item>@drawable/premierleague</item>
+        <item>@drawable/laliga</item>
+        <item>@drawable/seriea</item>
+        <item>@drawable/ligue1</item>
+        <item>@drawable/bundesliga</item>
+    </array>
+
 </resources>

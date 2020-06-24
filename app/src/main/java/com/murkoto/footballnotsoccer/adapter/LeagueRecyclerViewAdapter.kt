@@ -21,6 +21,7 @@ class LeagueRecyclerViewAdapter(private val leagues: List<League>, private val c
     override fun onBindViewHolder(holder: LeagueViewHolder, position: Int) {
         val league = leagues[position]
         holder.binding.league = league
+        holder.binding.ivBadge.setImageResource(league.badgeRes)
     }
 
     class LeagueViewHolder(val binding: ItemLeagueListBinding): RecyclerView.ViewHolder(binding.root)

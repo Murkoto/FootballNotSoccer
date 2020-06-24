@@ -1,4 +1,8 @@
 package com.murkoto.footballnotsoccer.model
 
-class League {
-}
+import android.graphics.drawable.Drawable
+
+class League(
+    val name: String,
+    val badgeRes: Int
+)
