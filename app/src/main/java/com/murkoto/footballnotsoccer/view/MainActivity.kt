@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var mAdapter: LeagueRecyclerViewAdapter
 
-    val snapHelper = PagerSnapHelper()
+    private val snapHelper = PagerSnapHelper()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,10 +27,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun prepareData(): List<League> {
         val res = mutableListOf<League>()
+        val ids = resources.getStringArray(R.array.id_league)
         val names = resources.getStringArray(R.array.leaguename)
         val badges = resources.obtainTypedArray(R.array.logos)
         for (idx in names.indices) {
             res.add(League(
+                id = ids[idx],
                 name = names[idx],
                 badgeRes = badges.getResourceId(idx, -1)
             ))

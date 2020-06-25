@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Football Not Soccer</string>
 
+    <string-array name="id_league">
+        <item>4328</item>
+        <item>4334</item>
+        <item>4332</item>
+        <item>4335</item>
+        <item>4331</item>
+    </string-array>
+
     <string-array name="leaguename">
         <item>Premier League</item>
         <item>La Liga Santander</item>
